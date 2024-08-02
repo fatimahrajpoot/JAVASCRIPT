@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // 1
+        // promt the user for first and lastname
+        // var firstName = prompt("Enter your first name:");
+        // var lastName = prompt("Enter your last name:");
+
+        // merge them into a variable
+        // var fullName = `${ firstName + lastName }`;
+
+        // greet the user using his full name
+        // alert(`Hello, ${fullName}! Welcome!`);
+
+
+        // 2
+        // Ask the user for input
+        // const userInput = prompt("Enter your favorite mobile phone model:");
+
+        // Check if the user provided input
+        // if (userInput !== null) {
+
+        // Get the length of the input
+        // const inputLength = userInput.length;
+
+        // Display the length in the browser
+        // alert(`The length of your input is ${inputLength} characters.`);
+        // } else {
+        // User canceled the input
+        // alert("You canceled the input.");
+        // }    
+
+        // 3
+        
+        // const word = "Pakistani";
+        // const targetLetter = "n";
+
+        // const index = word.indexOf(targetLetter);
+
+        // if (index !== -1) {
+        // document.write(`${word} index of '${targetLetter}' : ${index }.`);
+        // } else {
+        // document.write(`"${targetLetter}" is not found in "${word}".`);
+        // }
+
+        // 4
+        // var word = "Hello World";
+        // var targetLetter = "l";
+
+        // var lastIndex = word.lastIndexOf(targetLetter);
+
+        // if (lastIndex !== -1) {
+        //     document.write(`The last index of "${targetLetter}" in "${word}" is ${lastIndex}.`);
+        // } else {
+        //         document.write(`"${targetLetter}" is not found in "${word}".`);
+        // }
+
+        // 5
+        // var word = "Pakistani";
+        // var characterAtThirdIndex = word[2]; // Indexing starts from 0
+        // document.write(`The character at the 3rd index in 'Pakistani' is: ${characterAtThirdIndex}`);
+
+        // 6
+        // const firstName = prompt("Please enter your first name:");
+        // const lastName = prompt("Please enter your last name:");
+
+        // Merge first name and last name using concat()
+        // const fullName = firstName.concat(" ", lastName);
+
+        // Display a greeting with the full name
+        // alert(`Hello, ${fullName}! Welcome!`);
+
+        // 7
+        // var originalWord = "Hyderabad";
+        // var replacedWord = originalWord.replace("Hyder", "Islam");
+        // document.write(`City: ${originalWord}<br>Ater Replacement: ${replacedWord}`);
+
+        // 8
+        // var message = "Ali and Sami are friends. They play cricket and football together.";
+
+        // var updatedmessage = message.replaceAll( "and" , "&");
+
+        // document.write(updatedmessage);
+
+        // 9
+        // Original value as a string
+        // var stringValue = "472";
+        // console.log("Value: " + stringValue);
+        // console.log("Type: " + typeof stringValue);
+
+        // Converted value as a number
+        // var numberValue = Number(stringValue);
+        // console.log("Value: " + numberValue);
+        // console.log("Type: " + typeof numberValue); 
+
+        // 10
+        // Prompt the user for input
+        // let = prompt("Enter text:");
+
+        // Convert the input to upper case
+        // let upperCaseText = userInput.toUpperCase();
+
+        // Display the converted text
+        // alert("Converted text: " + upperCaseText);
+
+        // 11
+      
+        // function toTitleCase(str) {
+
+        // var words = str.split(' ');
+        
+        // var titleCaseWords = [];
+
+        
+        // for (var i = 0; i < words.length; i++) {
+
+        // var firstChar = words[i].charAt(0).toUpperCase();
+        
+        // var restOfWord = words[i].slice(1).toLowerCase();
+        
+        // var titleCaseWord = firstChar + restOfWord;
+
+        // titleCaseWords.push(titleCaseWord);
+        // }
+
+        
+        // return titleCaseWords.join(' ');
+        // }
+
+   
+        // var userInput = prompt("Enter text:");
+
+        // var titleCaseText = toTitleCase(userInput);
+
+        // alert("Converted text: " + titleCaseText);
+
+        // 12
+        // var num = 35.36;
+        // var result = num.toString().replace('.', '');
+        // console.log('Number:', num);
+        // console.log('Result:', result);
+
+        // 13
+    
+        // function containsInvalidCharacters(username) {
+        // var invalidCharacters = ['@', '.', '!', ','];
+        // for (var i = 0; i < invalidCharacters.length; i++) {
+        // if (username.indexOf(invalidCharacters[i]) !== -1) {
+        // return true;
+        // }
+        // }
+        // return false;
+        // }
+
+        // Function to prompt the user for a valid username
+        // function getValidUsername() {
+        // var username;
+        // do {
+        // username = prompt("Enter a username:");
+        // if (containsInvalidCharacters(username)) {
+            // alert("Please enter a valid username without @, ., !, or ,");
+        // }
+        // } while(containsInvalidCharacters(username));
+        // return username;
+        // }
+
+        // Get a valid username from the user
+        // var validUsername = getValidUsername();
+
+        // Display the valid username
+        // alert("Your valid username is: " + validUsername);
+
+        // 14
+        // function searchItem(arr, userInput) {
+        // var lowerUserInput = userInput.toLowerCase(); // Convert user input to lowercase
+
+        // var index = arr.findIndex(item => item.toLowerCase() === lowerUserInput);
+
+        // if (index !== -1) {
+        // alert(`"${userInput}" is found in the list.`);
+        // } else {
+        // alert(`"${userInput}" is not found in the list.`);
+        // }
+        // }
+
+        // const A = ["cake", "apple pie", "cookie", "chips", "patties"];
+        // const userInput = prompt("Enter an item to search:"); // Get user input
+
+        // searchItem(A, userInput);
+
+        // 15
+        // function validatePassword(password) {
+            
+        // Check if the password contains at least one alphabet and one number
+        // const hasAlphabet = /[a-zA-Z]/.test(password);
+        // const hasNumber = /\d/.test(password);
+
+        // Check if the password starts with an alphabet
+        // const startsWithAlphabet = /^[a-zA-Z]/.test(password);
+
+        // Check if the password length is at least 6 characters
+        // const isLengthValid = password.length >= 6;
+
+        // Validate the password based on the conditions
+        // if (hasAlphabet && hasNumber && startsWithAlphabet && isLengthValid) {
+        // console.log("Valid password!");
+        // } else {
+        // console.log("Invalid password. Please enter a valid password.");
+        // }
+        // }
+
+        // Example usage:
+        // const userPassword = prompt("Enter your password:");
+        // validatePassword(userPassword);
+
+        // 16
+        // var university = "University of Karachi";
+
+        // var universityArray = university.split(" ");
+
+        // document.write("<h1>Elements of Array:</h1>");
+        // for (var i = 0; i < universityArray.length; i++) {
+        // document.write(universityArray[i] + "<br>");
+        // }
+
+        // 17
+        // function getLastCharacter(input) {
+        // return input.charAt(input.length - 1);
+        // }
+
+        // Example usage:
+        // var userInput = prompt("Enter a string:");
+        // var lastChar = getLastCharacter(userInput);
+        // document.write("user input:", userInput , "<br>Last character:", lastChar);
+        
+        // 18
+        // var text = "The quick brown fox jumps over the lazy dog";
+
+        // var lowerCaseText = text.toLowerCase();
+
+        // var wordsArray = lowerCaseText.split(' ');
+
+        // var count = 0;
+
+        // for (var i = 0; i < wordsArray.length; i++) {
+        // if (wordsArray[i] === 'the') {
+        // count++;
+        // }
+        // }
+
+        // document.write("Text: " + text + "<br>");
+        // document.write("There are " + count + " occurrence(s) of the word 'the'.");
+</script>
+
+</body>
+</html>
